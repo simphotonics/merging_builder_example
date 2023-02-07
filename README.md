@@ -19,22 +19,20 @@ the section [usage].
 ## Features and bugs
 Please file feature requests and bugs at the [issue tracker].
 
-[add_names_builder]: https://github.com/simphotonics/merging_builder/blob/master/example/researcher_builder/lib/builder.dart
+[add_names_builder]: https://github.com/simphotonics/merging_builder_example/blob/researcher_builder/lib/builder.dart
 
-[add_names_generator]: https://github.com/simphotonics/merging_builder/blob/master/example/researcher_builder/lib/generators/add_names_generator.dart
+[add_names_generator]: https://github.com/simphotonics/merging_builder_example/blob/researcher_builder/lib/generators/add_names_generator.dart
 
 [builder]: https://github.com/dart-lang/build
 
-[example]: ../example
-
-[issue tracker]: https://github.com/simphotonics/merging_builder/issues
+[issue tracker]: https://github.com/simphotonics/merging_builder_example/issues
 
 [merging_builder]: https://pub.dev/packages/merging_builder
 
 [MergingBuilder]: https://pub.dev/documentation/merging_builder/latest/merging_builder/MergingBuilder-class.html
 
-[researcher]: https://github.com/simphotonics/merging_builder/tree/master/example/researcher
+[researcher]: https://github.com/simphotonics/merging_builder_example/blob/example/researcher
 
-[researcher_builder]: https://github.com/simphotonics/merging_builder/tree/master/example/researcher_builder
+[researcher_builder]: https://github.com/simphotonics/merging_builder_example/blob/example/researcher_builder
 
 [usage]: https://github.com/simphotonics/merging_builder#usage
