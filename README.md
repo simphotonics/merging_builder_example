@@ -19,9 +19,9 @@ the section [usage].
 ## Features and bugs
 Please file feature requests and bugs at the [issue tracker].
 
-[add_names_builder]: https://github.com/simphotonics/merging_builder_example/blob/researcher_builder/lib/builder.dart
+[add_names_builder]: researcher_builder/lib/builder.dart
 
-[add_names_generator]: https://github.com/simphotonics/merging_builder_example/blob/researcher_builder/lib/generators/add_names_generator.dart
+[add_names_generator]: researcher_builder/lib/generators/add_names_generator.dart
 
 [builder]: https://github.com/dart-lang/build
 
