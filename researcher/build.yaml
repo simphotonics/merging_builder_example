@@ -1,21 +1,24 @@
 targets:
   $default:
     builders:
-      # Configure the builder `pkg_name|builder_name`
+      # MergingBuilder 'add_name_builder' reads files in lib/input/*.dart
+      # and generates output to lib/out/researchers.dart
       researcher_builder|add_names_builder:
-        # Only run this builder on the specified input.
         enabled: true
+        # Only run this builder on the specified input.
         # generate_for:
         #   - lib/*.dart
         options:
-          input_files: 'lib/input/*.dart'
-          output_file: 'lib/output/researchers.dart'
-          sort_assets: false
+          input_files: 'lib/src/input/*.dart'
+          output_file: 'lib/src/output/researchers.dart'
+          sort_assets: true
           header: '// Header specified in build.yaml.'
           footer: '// Footer specified in build.yaml.'
+      # StandaloneBuilder 'assistant_builder' reads files in lib/input/*.dart.
+      # For each input file it generates a file in lib/output/assistant_(*).dart
       researcher_builder|assistant_builder:
         enabled: true
         options:
-          input_files: 'lib/input/*.dart'
-          output_files: 'lib/output/assistant_(*).dart'
+          input_files: 'lib/src/input/*.dart'
+          output_files: 'lib/src/output/assistant_(*).dart'
           root: ''

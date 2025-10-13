@@ -1,18 +1,24 @@
 import 'package:researcher_builder/researcher_builder.dart'
     show AddIntegers, AddNames, AddNumbers;
 
+import '../base/study.dart';
+
 /// Const class for testing purposes.
 @AddNumbers()
 @AddIntegers()
 @AddNames()
-class ResearcherB {
-  const ResearcherB();
+class Biologist {
+  const Biologist();
 
-  final List<String> names = const ['Philip', 'Martens'];
+  final List<String> names = const ['Sarah', 'Martens'];
 
   final Set<int> integers = const {7, 9};
 
   final num number = 119;
 
-  final String title = 'ResearcherB';
+  final String title = 'Dr';
+
+  final studies = const <Study>[];
+
+  //final colleaque = const Astronomer();
 }

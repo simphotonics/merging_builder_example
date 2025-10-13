@@ -7,25 +7,23 @@ version: 0.0.1
 publish_to: none
 
 environment:
-  sdk: '^3.0.3'
+  sdk: '^3.9.0'
 
 dependencies:
-  analyzer: ^6.4.1
-  build: ^2.4.1
-  build_config: ^1.1.1
-  merging_builder: ^0.2.7
-  quote_buffer: ^0.2.6
+  analyzer: ^8.3.0
+  build: ^4.0.1
+  build_config: ^1.2.0
+  merging_builder:
+    # git:
+    #   url: git@github.com:simphotonics/merging_builder.git
+    #   ref: main
+    path: ../../merging_builder
+  quote_buffer: ^0.2.7
   researcher:
     path: ../researcher
-  source_gen: ^1.5.0
+  source_gen: ^4.0.2
 
 dev_dependencies:
-  lints: ^3.0.0
+  lints: ^6.0.0
 
-dependency_overrides: null
-
-# source_gen:
-#   git:
-#     url: git@github.com:dart-lang/source_gen.git
-#     ref: master
-#     path: source_gen
+# dependency_overrides:

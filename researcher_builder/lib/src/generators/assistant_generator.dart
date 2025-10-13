@@ -27,13 +27,27 @@ class AssistantGenerator extends GeneratorForAnnotation<AddNames> {
   ) {
     final result = <String>[];
     if (element is ClassElement) {
-      final nameObjects =
-          element.getField('names')?.computeConstantValue()?.toListValue();
+      final nameObjects = element
+          .getField('names')
+          ?.computeConstantValue()
+          ?.toListValue();
 
       for (final nameObj in nameObjects ?? []) {
         result.add(nameObj.toStringValue());
       }
-      return 'final String assistants = \'${result.join(', ')}\';';
+
+      final title = element
+          .getField('title')
+          ?.computeConstantValue()
+          ?.toStringValue();
+
+      if (title != null) {
+        final assistant = 'assistant$title';
+        return 'final String $assistant = \'${result.join(', ')}\';';
+      } else {
+        return '// Error generating variable name: '
+            'final String title = \'${result.join(', ')}\';';
+      }
     }
     return '';
   }
