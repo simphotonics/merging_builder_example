@@ -9,23 +9,6 @@ to **one output file**,
 the generated output to a **standalone** file that can be located in a different
 folder and have a user defined suffix.
 
-The build process consists of scannig the appropriate files,
-extracting the required information,
-generating the source code, and writing the source code to certain files.
-The build process
-also entails keeping track of files changes,
-delete conflicting files, reporting issues and progress.
-
-Source code generation using Dart relies heavily on *constants* known at compile time.
-Dart's static [`analyzer`][analyzer] provides access to libraries, classes,
-class fields, class methods, functions, variables, etc in the form of [`Elements`][Elements].
-Compile-time constant expressions are represented by a [`DartObject`][DartObject]
-and can be accessed by using [`computeConstantValue()`][computeConstantValue()] a method available for elements representing a variable.
-
-In practice, we mark constant constant classes with annotations and instruct
-the builder to processes only the annotated objects.
-
-
 The example presented here contains two packages:
 
 1. The package [`researcher_builder`][researcher_builder]
