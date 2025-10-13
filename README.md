@@ -28,10 +28,10 @@ the `build.yaml` files in [`researcher`][researcher] and [`researcher_builder`][
 
 To build the package [`researcher`][researcher] clone the project
 [`merging_builder_example`][merging_builder_example],
-navigate to the root directory of [`researcher`][researcher] 
+navigate to the root directory of [`researcher`][researcher]
 and issue the command:
 ```Term
-$ dart run build_runner build --delete-conflicting-outputs --verbose'
+$ dart run build_runner build --delete-conflicting-outputs --verbose
 ```
 
 ## Features and bugs
