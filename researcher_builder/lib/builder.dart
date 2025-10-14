@@ -39,12 +39,13 @@ Builder assistantBuilder(BuilderOptions options) {
     'output_files': 'lib/output/assistant_(*).dart',
     'header': AssistantGenerator.header,
     'footer': AssistantGenerator.footer,
-    'root': ''
+    'root': '',
   });
   options = defaultOptions.overrideWith(options);
   return StandaloneBuilder(
-      generator: AssistantGenerator(),
-      inputFiles: options.config['input_files'],
-      outputFiles: options.config['output_files'],
-      root: options.config['root']);
+    generator: AssistantGenerator(),
+    inputFiles: options.config['input_files'],
+    outputFiles: options.config['output_files'],
+    root: options.config['root'],
+  );
 }

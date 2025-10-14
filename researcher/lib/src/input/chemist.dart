@@ -7,7 +7,7 @@ import '../base/study.dart';
 @AddNumbers()
 @AddIntegers()
 @AddNames()
-class Chemist{
+class Chemist {
   const Chemist();
 
   final List<String> names = const ['Jake', 'Smith'];
