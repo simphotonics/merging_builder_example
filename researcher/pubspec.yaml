@@ -1,6 +1,7 @@
 name: researcher
 
-description: Example demonstrating how to use the library merging_builder.
+description: Example demonstrating how to use the builders provided by the
+             package reasearcher_builder
 
 version: 0.0.1
 

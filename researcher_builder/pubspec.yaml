@@ -1,6 +1,7 @@
 name: researcher_builder
 
-description: Example demonstrating how to use the library merging_builder.
+description: Example demonstrating how to use the builders and generators
+             provided by the package merging_builder.
 
 version: 0.0.1
 
@@ -13,11 +14,12 @@ dependencies:
   analyzer: ^8.3.0
   build: ^4.0.1
   build_config: ^1.2.0
-  merging_builder:
+  merging_builder: ^0.3.1
+
     # git:
     #   url: git@github.com:simphotonics/merging_builder.git
     #   ref: main
-    path: ../../merging_builder
+    # path: ../../merging_builder
   quote_buffer: ^0.2.7
   researcher:
     path: ../researcher
