@@ -31,7 +31,7 @@ To build the package [`researcher`][researcher] clone the project
 navigate to the root directory of [`researcher`][researcher]
 and issue the command:
 ```Term
-$ dart run build_runner build --delete-conflicting-outputs --verbose
+$ dart run build_runner build --verbose
 ```
 
 ## Features and bugs
