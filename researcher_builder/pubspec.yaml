@@ -14,7 +14,7 @@ dependencies:
   analyzer: ^14.4.0
   build: ^4.0.11
   build_config: ^1.3.3
-  merging_builder: ^1.1.0
+  merging_builder: ^1.1.1
     # git:
     #   url: git@github.com:simphotonics/merging_builder.git
     #   ref: main
