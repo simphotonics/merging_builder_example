@@ -7,3 +7,5 @@ analyzer:
 linter:
   rules:
     - camel_case_types
+    - avoid_final_parameters: true
+    - parameter_assignments: true

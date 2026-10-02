@@ -20,7 +20,7 @@ Builder addNamesBuilder(BuilderOptions options) {
     'sort_assets': true,
   });
 
-  // Apply user set options.
+  // Apply the options the user set in the build.yaml file.
   options = defaultOptions.overrideWith(options);
   return MergingBuilder<List<String>, AddNames>(
     generator: AddNamesGenerator(),
@@ -41,6 +41,7 @@ Builder assistantBuilder(BuilderOptions options) {
     'footer': AssistantGenerator.footer,
     'root': '',
   });
+  // Apply the options the user set in the build.yaml file.
   options = defaultOptions.overrideWith(options);
   return StandaloneBuilder(
     generator: AssistantGenerator(),
